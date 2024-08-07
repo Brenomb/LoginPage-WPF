@@ -24,5 +24,10 @@ namespace LoginPage_WPF
         {
             InitializeComponent();
         }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

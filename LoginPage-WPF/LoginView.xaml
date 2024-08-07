@@ -27,11 +27,12 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="1" Grid.Column="1" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Username:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Username" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Content="Password:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <PasswordBox Grid.Row="4" Grid.Column="1" x:Name="Password" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Welcome" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="20"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Username:" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="18"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="Username" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Password:" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="18"/>
+        <PasswordBox Grid.Row="4" Grid.Column="1" x:Name="Password" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18"/>
+        <Button Grid.Row="6" Grid.Column="1" x:Name="LoginButton" Content="LOGIN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="LoginButton_Click"/>
     </Grid>
     
 </UserControl>
