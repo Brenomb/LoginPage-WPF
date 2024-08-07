@@ -27,7 +27,28 @@ namespace LoginPage_WPF
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            string usernameEntered = UsernameTextBox.Text;
+            string passwordEntered = PasswordBox.Password;
 
+            string fixedUsername = "admin";
+            string fixedPassword = "admin";
+
+            if (usernameEntered == fixedUsername && passwordEntered == fixedPassword)
+            {
+                MessageBox.Show("Login Executed!");
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username or Password.");
+            }
+        }
+
+
+        public void OnPasswordChanged(object sender, EventArgs e)
+        {
+            LoginButton.IsEnabled = !string.IsNullOrEmpty(PasswordBox.Password);
         }
     }
 }
+
+
